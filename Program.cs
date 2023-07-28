@@ -6,7 +6,7 @@ namespace telefonUygulamasi
         {
             List<rehber> rb = new List<rehber>();
             int secim=-1;
-            rb.Add(new rehber { Isim = "elif", Soyisim = "tilki", Numara = 1 });  //5 varsayılan kişi
+            rb.Add(new rehber { Isim = "elif", Soyisim = "tilki", Numara = 1 }); // 5 varsayılan kişi
             rb.Add(new rehber { Isim = "elif", Soyisim = "a", Numara = 2 });
             rb.Add(new rehber { Isim = "yılmaz", Soyisim = "c", Numara = 3 });
             rb.Add(new rehber { Isim = "ayşe", Soyisim = "e", Numara = 4 });
@@ -68,11 +68,12 @@ namespace telefonUygulamasi
                         Console.WriteLine("Aradığınız krtiterlere uygun veri rehberde bulunamadı. Lütfen bir seçim yapınız.\r\n  " +
                             "* Silmeyi sonlandırmak için : (1)\r\n  " +
                             "* Yeniden denemek için      : (2)");
+                        Console.Write("seçim:");
                         int secim2 = Convert.ToInt32(Console.ReadLine());
 
                         if (secim2 == 1)
                         {
-                            break;
+                            secim=-1;
                         }
                         if (secim2 == 2)
                         {
@@ -109,11 +110,12 @@ namespace telefonUygulamasi
                         Console.WriteLine("Aradığınız krtiterlere uygun veri rehberde bulunamadı. Lütfen bir seçim yapınız.\r\n  " +
                             "* Güncellemeyi sonlandırmak için : (1)\r\n  " +
                             "* Yeniden denemek için      : (2)");
+                        Console.Write("seçim:");
                         int secim2 = Convert.ToInt32(Console.ReadLine());
 
                         if (secim2 == 1)
                         {
-                            break;
+                            secim = -1;
                         }
                         if (secim2 == 2)
                         {
